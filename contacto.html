@@ -22,10 +22,10 @@
             
             <nav class="navegacion">
             
-                
+                <a href="index.html" >Inicio</a>
                 <a href="productos.html" >productos</a>
             
-                <a href="contacto.html" >Contacto</a>
+                
             </nav>
         </div> <!--fin de barra--->
 
@@ -67,11 +67,11 @@
                 <label for="opciones">Tipo de mesnaje:</label>
                 <select id="opciones">
                     <option value="" disabled selected>--Seleccione--</option>
-                    <option value="venta">Pregunta </option>
-                    <option value="compra">Compra</option>
+                    <option value="venta">Conocer Catalogo </option>
+                    <option value="compra">Ya se que comprar</option>
                 </select>
 
-                <label for="cantidad">CANTIDAD (Cuantos pedidos quieres realizar:</label>
+                <label for="cantidad">CANTIDAD (Cuantos pedidos quieres realizar:)</label>
                 <input type="number" id="cantidad">
             </fieldset>
             
@@ -88,15 +88,25 @@
         </section>
         
     </main>
+    <section class="contenedor ">
+        <h2 class="centrar-texto fw-300">Nuestra Ubicación</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.298967022515!2d-73.81656102432867!3d5.6183018959408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e6a4182be0865d9%3A0x4f59e0412e3c540!2sChiquinquir%C3%A1%2C%20Boyac%C3%A1!5e0!3m2!1ses!2sco!4v1695138778759!5m2!1ses!2sco"
+                allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </section>
+    
 
     <div class="site-footer">
         <footer class="contenedor contenido-footer">
             <nav class="navegacion-footer ">
                
+                <a href="index.html" >Inicio</a>
             
                 <a href="productos.html" >productos</a>
             
-                <a href="contacto.html" >Contacto</a>
+                
             </nav>
             <p class="copyright">2024 Antojados Chiquinquira  &copy;</p> 
 
@@ -113,15 +123,17 @@
             var cantidad = document.getElementById('cantidad').value;
             
             var textoOpciones = '';
-            if (opcionSeleccionada === 'venta') {
-                textoOpciones = 'Soy conferencista.';
-            } else if (opcionSeleccionada === 'compra') {
-                textoOpciones = 'Soy participante.';
+            if (opcionSeleccionada === 'Conocer Catalogo') {
+                textoOpciones = 'Quiero conocer el Catalogo.';
+            } else if (opcionSeleccionada === 'Ya se que comprar') {
+                textoOpciones = 'Quiero Realizar una compra.';
             }
             
-            var textoCantidad = cantidad ? ' Hay ' + cantidad + ' personas.' : '';
+            var textoCantidad = cantidad ? ' Me interesa Comprar ' + cantidad + ' Detalles.' : '';
             
-            var mensajeWhatsapp = 'Hola, mi nombre es ' + nombre + '. Mi número de teléfono es ' + telefono + '. ' + textoOpciones + textoCantidad + ' Mi mensaje es: ' + mensaje;
+            var mensajeWhatsapp = 'Hola, mi nombre es ' + nombre +
+             '. Mi número de teléfono es ' + telefono + 
+            '. ' + textoOpciones + textoCantidad + ' Mi mensaje es: ' + mensaje;
             
             var mensajeCodificado = encodeURIComponent(mensajeWhatsapp);
             

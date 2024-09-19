@@ -1,8 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 body {
     font-family: Arial, sans-serif;
@@ -46,11 +41,7 @@ header {
     height: auto;
 }
 
-nav {
-    background-color: #f8f8f8;
-    text-align: center;
-    padding: 15px 0;
-}
+
 
 .menu {
     list-style: none;
@@ -96,10 +87,6 @@ header {
     padding: 20px 0;
 }
 
-h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-}
 
 .productos {
     display: flex;
@@ -230,4 +217,141 @@ h2 {
     color: #CC9408; /* Cambia el color al pasar el mouse */
     font-size: 2rem; /* Aumenta el tamaño de fuente */
     font-weight: bold; 
+}
+
+.site-header{
+    background-image: url(../img/11.png);
+    
+    min-height: 4rem;
+    background-position: center;
+    background-size: cover;
+}
+.site-header.inicio {
+    background: linear-gradient(135deg, #963455, #9446a1, #e1f5fe); /* Degradado en colores pastel */
+
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.site-header.inicio {
+    background: linear-gradient(135deg, #963455, #9446a1, #e1f5fe); /* Degradado en colores pastel */
+
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+/* barra */
+.barra {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0e0e079; /* Hacemos que el contenedor sea inicialmente transparente */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.39); /* Agregamos una sombra para la profundidad */
+    padding-left: 90px; /* Añadimos un margen interno a la izquierda */
+    padding-right: 90px;
+    padding-bottom: 0;
+    padding-top: 7px;
+    
+    
+}
+
+
+
+
+
+
+.barra:hover {
+    background-color: #e0e0e0; /* Cambiamos el color de fondo para resaltar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Aumentamos la sombra para un efecto de elevación */
+
+}
+.logo {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%; /* Hace la imagen redonda */
+
+    transition: transform 0.3s ease; /* Animación de transición para transformaciones */
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Escala la imagen al pasar el mouse sobre ella */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0); /* Añade una sombra al pasar el mouse */
+}
+
+/* Estilo base para los enlaces */
+.navegacion a {
+    color: #000000;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    transition: color 0.3s, font-size 0.3s; /* Transición suave para color y tamaño de fuente */
+}
+
+/* Elimina el margen derecho solo para el último elemento */
+.navegacion a:last-of-type {
+    margin-right: 0;
+}
+
+/* Estilo al pasar el mouse sobre los enlaces */
+.navegacion a:hover {
+    color: #d46114; /* Cambia el color */
+    font-size: 2rem; /* Aumenta el tamaño de fuente */
+    font-weight: bold; /* Puedes agregar negrita u otras modificaciones */
+}
+
+
+/* Estilo base para los enlaces en la navegación del footer */
+.navegacion-footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    transition: color 0.3s, font-size 0.3s; /* Transición suave para el color */
+}
+
+.navegacion a:last-of-type {
+    margin-right: 0;
+}
+/* Estilo al pasar el mouse sobre los enlaces en la navegación del footer */
+.navegacion-footer a:hover {
+    color: #CC9408; /* Cambia el color al pasar el mouse */
+    font-size: 2rem; /* Aumenta el tamaño de fuente */
+    font-weight: bold; 
+}
+
+
+.contenedor-index {
+    
+    margin-top: 0;
+    margin-right: 0rem;
+    margin-bottom: 0;
+    margin-left: 0rem;
+}
+.contenido-header{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+   
+}
+.contenido-header h1{
+    
+    max-width: 90rem;
+    padding-bottom: 5rem;
+    line-height: 2rem ;
+    
+    padding-left: 2rem;
+    padding-top: 5rem;
+    font-size: 4rem;
+    /* diseño de fondo */
+    background-image: url(https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYmwyYjExYWx0a2szNDZkdjN4cDBhdHpvZ2d1enF1YmZscW03MG52OCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/hM4OekkycahSas09bD/giphy.gif);
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	
 }

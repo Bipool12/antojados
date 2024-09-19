@@ -994,6 +994,33 @@ th {
 .texto-inolvidable {
     font-size: 24px; /* Tamaño del texto por defecto */
 }
+
+/* Sección del mapa */
+.map-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: center;
+}
+
+
+
+
+.map-container {
+    display: flex;
+    justify-content: center;
+  padding-left: 16rem;
+    width: 76%;
+    height: 500px;
+    
+}
+
+iframe {
+    width: 80%;
+    height: 80%;
+    border: 10px solid #FFB6C1; /* Borde color rosa claro */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave para un efecto agradable */
+}
 /* Para dispositivos con un ancho máximo de 768px (como tablets y teléfonos) */
 @media only screen and (max-width: 768px) {
     .site-header {
